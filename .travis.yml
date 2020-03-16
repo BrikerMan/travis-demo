@@ -1,0 +1,14 @@
+language: python
+dist: xenial
+
+python:
+  - "3.6"
+
+cache: pip
+
+install:
+  - export PYTHONPATH=`pwd`
+  - pip install requests
+  - env
+
+script: echo $API_ENV
